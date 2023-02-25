@@ -1,0 +1,164 @@
+{
+  "toCreateNewTire": [
+    {
+      "tireBrand": [
+        {
+          "idName": "michelin",
+          "name": "Michelin"
+        },
+        {
+          "idName": "laurent",
+          "name": "Pneu Laurent"
+        },
+        {
+          "idName": "bfg",
+          "name": "BF Goofrich"
+        }
+      ],
+      "tireLife": [
+        {
+          "idName": "new",
+          "name": "Neuf"
+        },
+        {
+          "idName": "retread",
+          "name": "Rechapé"
+        }
+      ],
+      "tireSize": [
+        {
+          "idName": "23575175",
+          "name": "235/75r17,5"
+        },
+        {
+          "idName": "31580225",
+          "name": "315/80r22,5"
+        },
+        {
+          "idName": "38565225",
+          "name": "385/80r22,5"
+        }
+      ],
+      "tireProfile": [
+        {
+          "idName": "bfg",
+          "name": "Route control S"
+        },
+        {
+          "idName": "bfg",
+          "name": "Route control D"
+        },
+        {
+          "idName": "laurent",
+          "name": "PL Multiway DE"
+        },
+        {
+          "idName": "laurent",
+          "name": "PL TE 3"
+        },
+        {
+          "idName": "michelinRech",
+          "name": "RemiX Multiway DE"
+        },
+        {
+          "idName": "michelinRech",
+          "name": "RemiX TE 3"
+        },
+        {
+          "idName": "michelin",
+          "name": "X Multiway ZE"
+        },
+        {
+          "idName": "michelin",
+          "name": "X Multiway DE"
+        },
+        {
+          "idName": "michelin",
+          "name": "X TE 3"
+        }
+      ]
+    }
+  ],
+  "stockTire": [
+    {
+      "id": "dfc12563r",
+      "type": "Rechapé",
+      "life": "retread",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "RemiX TE 3",
+      "depth": "5"
+    },
+    {
+      "id": "zfd12467r",
+      "type": "Rechapé",
+      "life": "retread",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "RemiX TE 3",
+      "depth": "10"
+    },
+    {
+      "id": "jkl12467r",
+      "type": "Rechapé",
+      "life": "retread",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "RemiX TE 3",
+      "depth": "10"
+    },
+    {
+      "id": "wxc12467r",
+      "type": "Rechapé",
+      "life": "retread",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "RemiX TE 3",
+      "depth": "10"
+    },
+    {
+      "id": "klm67493r",
+      "type": "Neuf",
+      "life": "new",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "X TE 3",
+      "depth": "17"
+    },
+    {
+      "id": "ert67493r",
+      "type": "Neuf",
+      "life": "new",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "X TE 3",
+      "depth": "6"
+    },{
+      "id": "yui67493r",
+      "type": "Neuf",
+      "life": "new",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "X TE 3",
+      "depth": "4"
+    },{
+      "id": "ghj67493r",
+      "type": "Neuf",
+      "life": "new",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "X TE 3",
+      "depth": "13"
+    },
+    {
+      "id": "wxc97284r",
+      "type": "Neuf",
+      "life": "new",
+      "brand": "Michelin",
+      "size": "385/65r22,5",
+      "profile": "X TE 3",
+      "depth": "13"
+    }
+    
+  ]
+}
