@@ -1,5 +1,12 @@
 import React from "react";
 
+/**
+ * display an overview of all tires of the same profile and the same life
+ * @param {array} stockTires
+ * @param {stirng} props
+ * @returns {object} title
+ */
+
 const InventorySummary = ({ stockTires, props }) => {
   let quantity = 0;
   let brand = "";

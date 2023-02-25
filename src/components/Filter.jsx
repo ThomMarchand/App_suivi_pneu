@@ -1,5 +1,12 @@
 import DisplayTire from "./DisplayTire";
 
+/**
+ * to iterate through the object array and choose in which section to add the data
+ * @param {string} props
+ * @param {array} stockTires
+ * @returns {object}
+ */
+
 const Filter = ({ props, stockTires }) => {
   return (
     <ul>

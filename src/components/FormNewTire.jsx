@@ -2,6 +2,13 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import SetSelectInput from "./setSelectInput";
 
+/**
+ * form for creating a new article
+ * @returns {input} type select
+ * @returns {input} type texte
+ * @returns {button} type submit
+ */
+
 const FormNewTire = () => {
   const [tireBrand, setTireBrand] = useState([]);
   const [tireLife, setTireLife] = useState([]);
