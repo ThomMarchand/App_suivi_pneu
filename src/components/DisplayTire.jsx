@@ -8,19 +8,21 @@ import React from "react";
 
 const DisplayTire = ({ eachTires }) => {
   return (
-    <li>
-      {eachTires.brand +
-        " " +
-        eachTires.size +
-        " " +
-        eachTires.profile +
-        ", " +
-        "matricule : " +
-        eachTires.id +
-        ", " +
-        "profondeur : " +
-        eachTires.depth}
-    </li>
+    <tr>
+      <td>
+        {eachTires.brand +
+          " " +
+          eachTires.size +
+          " " +
+          eachTires.profile +
+          ", " +
+          "matricule : " +
+          eachTires.id +
+          ", " +
+          "profondeur : " +
+          eachTires.depth}
+      </td>
+    </tr>
   );
 };
 

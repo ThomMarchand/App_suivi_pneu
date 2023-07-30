@@ -21,11 +21,11 @@ const StockTires = () => {
       <header>
         <div className="new-tires-container">
           <h3>Pneus Neuf</h3>
-          <TiresCard stockTires={stockTires} props={"new"} />
+          <TiresCard stockTires={stockTires} lifeTire={"new"} />
         </div>
         <div className="retread-tires-container">
           <h3>Pneus Rechapé</h3>
-          <TiresCard stockTires={stockTires} props={"retread"} />
+          <TiresCard stockTires={stockTires} lifeTire={"retread"} />
         </div>
       </header>
       <footer>

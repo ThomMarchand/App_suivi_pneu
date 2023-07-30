@@ -6,11 +6,11 @@ import Filter from "./Filter";
 /**
  * show or hide on click all the tires of the same profile and the same life
  * @param {array} stockTires
- * @param {stirng} props
+ * @param {stirng} lifeTire
  * @returns {object} title and list
  */
 
-const TiresCard = ({ stockTires, props }) => {
+const TiresCard = ({ stockTires, lifeTire }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,10 +18,10 @@ const TiresCard = ({ stockTires, props }) => {
       className="inventory-summary"
       onClick={() => setIsOpen((wasOpen) => !wasOpen)}
     >
-      <InventorySummary stockTires={stockTires} props={props} />
+      <InventorySummary stockTires={stockTires} lifeTire={lifeTire} />
       {isOpen && (
         <div className="display-tires">
-          <Filter stockTires={stockTires} props={props} />
+          <Filter stockTires={stockTires} lifeTire={lifeTire} />
         </div>
       )}
     </div>
