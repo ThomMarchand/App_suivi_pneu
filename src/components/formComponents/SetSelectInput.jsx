@@ -1,3 +1,4 @@
+import { useState } from "react";
 import SetOption from "./SetOption";
 
 /**
@@ -9,10 +10,12 @@ import SetOption from "./SetOption";
  */
 
 const SetSelectInput = ({ optionArray, name, id }) => {
+  const [defaultValue, setDefaultValue] = useState("Choisir");
   return (
     <select name={name} id={id}>
+      <option>{defaultValue}</option>
       {optionArray.map((option, index) => (
-        <SetOption key={index} option={option} />
+        <SetOption key={id + index} option={option} />
       ))}
     </select>
   );

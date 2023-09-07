@@ -5,7 +5,13 @@
  */
 
 const SetOption = ({ option }) => {
-  return <option value={option.idName}>{option.name}</option>;
+  let optionValue = option.name;
+
+  if (option.idName === "new" || option.idName === "retread") {
+    optionValue = option.idName;
+  }
+
+  return <option value={optionValue}>{option.name}</option>;
 };
 
 export default SetOption;
