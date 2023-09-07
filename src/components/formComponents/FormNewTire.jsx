@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import SetSelectInput from "./setSelectInput";
+import SetSelectInput from "./SetSelectInput";
 
 /**
  * form for creating a new article
@@ -30,23 +30,20 @@ const FormNewTire = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("brand : ", e.target[0].value);
-    console.log("life : ", e.target[1].value);
-    console.log("size : ", e.target[2].value);
-    console.log("profile : ", e.target[3].value);
-    console.log("id : ", e.target[4].value);
-    console.log("depth : ", e.target[5].value);
-    axios.post("http://localhost:3004/stockTire"),
-      {
-        // id: e.target[4].value,
-        type: "test",
+    axios
+      .post("http://localhost:3004/stockTire", {
+        id: e.target[4].value,
         life: e.target[1].value,
         brand: e.target[0].value,
         size: e.target[2].value,
         profile: e.target[3].value,
         depth: e.target[5].value,
-        date: Date.now(),
-      };
+        createAt: Date.now(),
+      })
+      .then(() => alert(`Le pneu à bien été créé`))
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (

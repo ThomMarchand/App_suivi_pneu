@@ -82,7 +82,6 @@
   "stockTire": [
     {
       "id": "dfc12563r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -91,7 +90,6 @@
     },
     {
       "id": "zfd12467r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -100,7 +98,6 @@
     },
     {
       "id": "jkl12467r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -109,7 +106,6 @@
     },
     {
       "id": "wxc12467r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -118,7 +114,6 @@
     },
     {
       "id": "klm67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -127,7 +122,6 @@
     },
     {
       "id": "ert67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -136,7 +130,6 @@
     },
     {
       "id": "yui67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -145,7 +138,6 @@
     },
     {
       "id": "ghj67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -154,7 +146,6 @@
     },
     {
       "id": "wxc97284r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -162,7 +153,13 @@
       "depth": "13"
     },
     {
-      "id": "k_KL_hY"
+      "id": "zrgqzareg",
+      "life": "retread",
+      "brand": "laurent",
+      "size": "38565225",
+      "profile": "laurent",
+      "depth": "17",
+      "createAt": 1694091106308
     }
   ]
 }

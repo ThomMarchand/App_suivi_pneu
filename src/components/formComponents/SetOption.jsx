@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * add option list
  * @param {object} option

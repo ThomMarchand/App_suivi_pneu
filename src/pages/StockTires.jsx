@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Navigation from "../components/Navigation";
 import TiresCard from "../components/TiresCard";
-import FormNewTire from "../components/FormNewTire";
+import FormNewTire from "../components/formComponents/FormNewTire";
 
 const StockTires = () => {
   const [stockTires, setStockTires] = useState([]);
