@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SetSelectInput from "./SetSelectInput";
 
 /**
@@ -14,6 +14,9 @@ const FormNewTire = () => {
   const [tireLife, setTireLife] = useState([]);
   const [tireProfile, setTireProfile] = useState([]);
   const [tireSize, setTireSize] = useState([]);
+
+  const refIdSelect = useRef(null);
+  const refDepthSelect = useRef(null);
 
   useEffect(() => {
     axios
@@ -40,7 +43,11 @@ const FormNewTire = () => {
         depth: e.target[5].value,
         createAt: Date.now(),
       })
-      .then(() => alert(`Le pneu à bien été créé`))
+      .then(
+        () => alert(`Le pneu à bien été créé`),
+        (refIdSelect.current.value = ""),
+        (refDepthSelect.current.value = "")
+      )
       .catch((err) => {
         console.log(err);
       });
@@ -86,12 +93,17 @@ const FormNewTire = () => {
       <br />
       <div className="form-container">
         <label htmlFor="id">Ecrire le matricule du pneu</label>
-        <input type="text" name="id" id="idSelect"></input>
+        <input type="text" ref={refIdSelect} name="id" id="idSelect"></input>
       </div>
       <br />
       <div className="form-container">
         <label htmlFor="depth">Ecrire la profondeur du pneu</label>
-        <input type="text" name="depth" id="depthSelect"></input>
+        <input
+          type="text"
+          ref={refDepthSelect}
+          name="depth"
+          id="depthSelect"
+        ></input>
       </div>
       <br />
       <button>Créer nouveau pneu</button>
