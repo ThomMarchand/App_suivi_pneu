@@ -82,7 +82,6 @@
   "stockTire": [
     {
       "id": "dfc12563r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -91,7 +90,6 @@
     },
     {
       "id": "zfd12467r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -100,7 +98,6 @@
     },
     {
       "id": "jkl12467r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -109,7 +106,6 @@
     },
     {
       "id": "wxc12467r",
-      "type": "Rechapé",
       "life": "retread",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -118,7 +114,6 @@
     },
     {
       "id": "klm67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -127,23 +122,22 @@
     },
     {
       "id": "ert67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
       "profile": "X TE 3",
       "depth": "6"
-    },{
+    },
+    {
       "id": "yui67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
       "profile": "X TE 3",
       "depth": "4"
-    },{
+    },
+    {
       "id": "ghj67493r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
@@ -152,13 +146,29 @@
     },
     {
       "id": "wxc97284r",
-      "type": "Neuf",
       "life": "new",
       "brand": "Michelin",
       "size": "385/65r22,5",
       "profile": "X TE 3",
       "depth": "13"
+    },
+    {
+      "id": "zrgqzareg",
+      "life": "new",
+      "brand": "Michelin",
+      "size": "385/80r22,5",
+      "profile": "X TE 3",
+      "depth": "2",
+      "createAt": 1694101813215
+    },
+    {
+      "id": "sZG",
+      "life": "retread",
+      "brand": "Pneu Laurent",
+      "size": "385/80r22,5",
+      "profile": "PL TE 3",
+      "depth": "2",
+      "createAt": 1694101920894
     }
-    
   ]
 }

@@ -1,6 +1,6 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
-import SetSelectInput from "./setSelectInput";
+import React, { useState, useEffect, useRef } from "react";
+import SetSelectInput from "./SetSelectInput";
 
 /**
  * form for creating a new article
@@ -14,6 +14,9 @@ const FormNewTire = () => {
   const [tireLife, setTireLife] = useState([]);
   const [tireProfile, setTireProfile] = useState([]);
   const [tireSize, setTireSize] = useState([]);
+
+  const refIdSelect = useRef(null);
+  const refDepthSelect = useRef(null);
 
   useEffect(() => {
     axios
@@ -30,23 +33,24 @@ const FormNewTire = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("brand : ", e.target[0].value);
-    console.log("life : ", e.target[1].value);
-    console.log("size : ", e.target[2].value);
-    console.log("profile : ", e.target[3].value);
-    console.log("id : ", e.target[4].value);
-    console.log("depth : ", e.target[5].value);
-    axios.post("http://localhost:3004/stockTire"),
-      {
-        // id: e.target[4].value,
-        type: "test",
+    axios
+      .post("http://localhost:3004/stockTire", {
+        id: e.target[4].value,
         life: e.target[1].value,
         brand: e.target[0].value,
         size: e.target[2].value,
         profile: e.target[3].value,
         depth: e.target[5].value,
-        date: Date.now(),
-      };
+        createAt: Date.now(),
+      })
+      .then(
+        () => alert(`Le pneu à bien été créé`),
+        (refIdSelect.current.value = ""),
+        (refDepthSelect.current.value = "")
+      )
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -89,12 +93,17 @@ const FormNewTire = () => {
       <br />
       <div className="form-container">
         <label htmlFor="id">Ecrire le matricule du pneu</label>
-        <input type="text" name="id" id="idSelect"></input>
+        <input type="text" ref={refIdSelect} name="id" id="idSelect"></input>
       </div>
       <br />
       <div className="form-container">
         <label htmlFor="depth">Ecrire la profondeur du pneu</label>
-        <input type="text" name="depth" id="depthSelect"></input>
+        <input
+          type="text"
+          ref={refDepthSelect}
+          name="depth"
+          id="depthSelect"
+        ></input>
       </div>
       <br />
       <button>Créer nouveau pneu</button>
